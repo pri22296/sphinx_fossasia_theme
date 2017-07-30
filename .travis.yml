@@ -1,4 +1,8 @@
 language: python
+
+script:
+  - echo "Dummy echo statement."            # This is required because travis requires a compulsory script section
+
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
